@@ -1,6 +1,12 @@
 public class Moto implements Veiculo{
-    private Boolean ligado=true;
-    private Integer velocidademoto=0;
+    private Boolean ligado;
+    private Integer velocidademoto;
+
+    public Moto(){
+        this.ligado=true;
+        this.velocidademoto=0;
+    }
+
     @Override
     public void ligar() {
         this.ligado=true;

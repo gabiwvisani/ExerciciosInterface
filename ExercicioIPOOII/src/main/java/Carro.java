@@ -1,6 +1,11 @@
 public class Carro implements Veiculo{
-    private Boolean ligado=true;
-    private Integer velocidadecarro=0;
+    private Boolean ligado;
+    private Integer velocidadecarro;
+
+    public Carro(){
+        this.ligado=true;
+        this.velocidadecarro=0;
+    }
     @Override
     public void ligar() {
         this.ligado=true;
@@ -16,7 +21,7 @@ public class Carro implements Veiculo{
     @Override
     public void acelerar(int velocidade) {
         this.velocidadecarro+=velocidade;
-        System.out.println("Carro acelerando a " + velocidade + " km/h.");
+        System.out.println("Carro acelerando a " + this.velocidadecarro + " km/h.");
     }
 
     @Override
